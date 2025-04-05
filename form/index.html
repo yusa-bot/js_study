@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chapter 12: フォーム</title>
+  <style>
+    form {
+      background-color: antiquewhite;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    table {
+      border: solid 1px gray;
+      border-collapse: collapse;
+    }
+    td {
+      border: solid 1px gray;
+      border-collapse: collapse;
+      padding: 10px 5px
+    }
+    #output {
+      border: solid 3px gold;
+      padding: 20px 10px;
+    }
+    form p {
+      margin-top: 0
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td><label for="textInput">テキスト入力</label></td>
+      <td><input id="textInput" type="text"></td>
+    </tr>
+    <tr>
+      <td><label for="password">パスワード</label></td>
+      <td><input id="password" type="password"></td>
+    </tr>
+    <tr>
+      <td>ラジオボタン</td>
+      <td>
+        <label><input type="radio" name="abcRadio" value="a">A</label>
+        <label><input type="radio" name="abcRadio" value="b">B</label>
+        <label><input type="radio" name="abcRadio" value="c">C</label>
+      </td>
+    </tr>
+    <tr>
+      <td>チェックボックス</td>
+      <td>
+        <label><input type="checkbox" name="abcCheck" value="a">A</label>
+        <label><input type="checkbox" name="abcCheck" value="b">B</label>
+        <label><input type="checkbox" name="abcCheck" value="c">C</label>
+      </td>
+    </tr>
+    <tr>
+      <td>ドロップダウンメニュー</td>
+      <td>
+        <select>
+          <option selected disabled>選んでね</option>
+          <option>A</option>
+          <option>B</option>
+          <option>C</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>ドロップダウンメニュー［複］</td>
+      <td>
+        <select multiple>
+          <option>A</option>
+          <option>B</option>
+          <option>C</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;">
+        <button>表示</button>
+      </td>
+    </tr>
+  </table>
+
+  <p id="output">ここに表示します</p>
+
+
+  <form>
+    <p>form要素</p>
+    <label>入力 <input name="formInput"></label>
+    <button type="submit">Submit</button>
+  </form>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
