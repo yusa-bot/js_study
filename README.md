@@ -4,6 +4,7 @@ OJKさん著[文系大学生のためのJavaScript入門](https://zenn.dev/ojk/b
 
 ## 1.slideshow
 10枚の写真のスライドショー
+自動再生・停止機能
 
 ## 2.form
 基本的なinput typeのform処理
